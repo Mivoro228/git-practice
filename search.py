@@ -1,7 +1,7 @@
 def binary_search(arr, target):
     if not arr:
     
-        return -1  # если массив пустой
+        return 'Массив не содержит ни одного элемента'  # если массив пустой
 
     left, right = 0, len(arr) - 1
     while left <= right:
@@ -13,4 +13,4 @@ def binary_search(arr, target):
             left = mid + 1
         else:
             right = mid - 1
-    return -1
+    return 'эллемент не найден'  # если элемент не найден
